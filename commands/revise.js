@@ -83,6 +83,9 @@ module.exports = {
                             break;
                         case 4:
                             currentQuestion.canShowAt = showAtDate.setMonth(showAtDate().getMonth() + 2);
+                            break;
+                        default:
+                            currentQuestion.canShowAt = showAtDate.setFullYear(showAtDate.getFullYear() + 1)
                     }
 
                     break;
